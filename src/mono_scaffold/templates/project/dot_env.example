@@ -1,0 +1,9 @@
+# Vorlage. `mono new` kopiert sie nach `.env` (gitignored, Modus 600 setzen).
+# Ohne ENVIRONMENT gilt production: keine API-Doku. Tests setzen ENVIRONMENT=test selbst.
+ENVIRONMENT=development
+LOG_LEVEL=INFO
+
+# Nur Entwicklung. In Produktion: eigenes Geheimnis, nie im Repo.
+POSTGRES_PASSWORD=dev-only-change-me
+DATABASE_URL=postgresql+psycopg://postgres:dev-only-change-me@127.0.0.1:5432/__PROJECT_SNAKE__
+TEST_DATABASE_URL=postgresql+psycopg://postgres:dev-only-change-me@127.0.0.1:5432/__PROJECT_SNAKE___test

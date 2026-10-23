@@ -1,0 +1,13 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.import_linter_cache/
+dist/
+var/
+scratchpad/
+.claude/worktrees/
+frontend/node_modules/
+frontend/dist/
